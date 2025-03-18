@@ -1,3 +1,3 @@
 # Preview
 
-![Changelog Component](Changelog%20Component/preview.png)
+![Changelog Component](preview.png)
