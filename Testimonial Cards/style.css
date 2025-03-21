@@ -1,0 +1,119 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.card-section{
+    display: flex;
+}
+.card, .card-outlined{
+    width: 450px;
+    min-width: 350px;
+    border-radius: 20px;
+    margin: 20px;
+}
+.card-outlined{
+    border: 1px solid #000000;
+}
+.card2{
+    display: flex;
+    margin: 20px;
+    width: 944px;
+    min-width: 744px;
+}
+.comment, .comment-black, .comment-black2{
+    padding: 10px;
+    border-radius: 20px;
+}
+.comment-black, .comment-black2{
+    background-color: #131313;
+    color: #ffffff;
+    position: relative;
+}
+.comment-black{
+    margin-bottom: 15px;
+}
+.comment-black2{
+    padding: 20px;
+}
+.comment-black::after{
+    content: '';
+    position: absolute;
+    bottom: -28px;
+    left: 15px;
+    width: 0;
+    height: 0;
+    border-width: 15px;
+    border-style: solid;
+    border-color: #000000 transparent transparent transparent;
+}
+.card-info{
+    display: flex;
+    align-items: center;
+}
+.card-info-text h3, .card-info-text p{
+    margin: 0px;
+    padding-left: 10px;
+}
+.card-img-man{
+    width: 64px;
+    height: 64px;
+    border-radius: 100%;
+}
+.card-img-man-tr{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    opacity: 50%;
+}
+.card-img-woman{
+    width: 256px;
+    height: 256px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+.grey{
+    color:grey;
+}
+.rating{
+    display: flex;
+    border-radius: 10px;
+    color: gold;
+    font-size: 19px;
+}
+.card-section2{
+    display: flex;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    margin: 20px;
+    min-width: 742px;
+    max-width: 943px;
+    flex-direction: column;
+    align-items: center;
+}
+.card3{
+    padding: 20px 40px;  
+    text-align: center;
+}
+.slider{
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+.slider-content::after{
+    content: '>';
+    position: absolute;
+    top: 50%;
+    right: -50px;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+.slider-content::before{
+    content: '<';
+    position: absolute;
+    top: 50%;
+    left: -50px;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+.slider-content{
+    margin: 0px 10px;
+}
