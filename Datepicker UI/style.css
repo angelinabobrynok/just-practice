@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.calendar td{
+    border: 1px solid black;
+    padding: 8px 5px;
+    text-align: center;
+}
+.calendar p {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calendar p::after{
+    content: '▶';
+    cursor: pointer;
+    position: relative;
+    left:25px
+}
+.calendar p::before{
+    content: '◀';
+    cursor: pointer;
+    position: relative;
+    right:25px
+}
+
+.calendar-table{
+    border-collapse: collapse;
+}
+.date-picker, .picker{
+    display: flex;
+    justify-content: center;
+}
+.date-picker{
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    width: 202px;
+}
+.date-picker-input{
+    width: 202px;
+    border: 1px solid black;
+    padding: 5px;
+}
+@media (max-width: 768px) {
+    body{
+        min-width: 300px;
+    }
+}
