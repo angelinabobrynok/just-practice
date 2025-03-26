@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Accessible Form UI</title>
+</head>
+<body>
+    <section class = "form-container">
+        <form class = "form" method="post">
+            <label for="name">Full Name</label>
+            <input tabindex="0" type="text" id="name" placeholder="What should we call you?" aria-label="Name" aria-required="true" required >
+            <label for="email">Email</label>
+            <input tabindex="0" type="email" id="email" placeholder="Where can we reach you?" aria-label="Email" aria-required="true" required>
+            <label for="password">Password</label>
+            <div class = "password-container">
+                <input tabindex="0" type="password" id="password" placeholder="XXXXXXXX" aria-label="Password" aria-required="true" required>
+                <button tabindex="0" class="toggle-btn" >👁️</button> 
+            </div>
+            <label for="password">Confirm Password</label>
+            <div class = "password-container">
+                <input tabindex="0" type="password" id="confirm-password" placeholder="XXXXXXXX" aria-label="Password" aria-required="true" required>
+                <button class="toggle-btn">👁️</button> 
+            </div> 
+            <button tabindex="0" aria-label="apply" class = "apply">Update Profile</button>  
+        </form>
+    </section>
+    <section class = "profile-completion">
+        <div class = "profile-completion-bar">
+            <div class = "progress"></div><span>65%</span>
+        </div>
+        <h3>Profile Completion</h3>
+        <ul class = "profile-completion-list">
+            <li class="s">Create Accout</li>
+            <li class="s">Update Roadmap Progress</li>
+            <li class="s">Setup Public Profile</li>
+            <li>Complete your first project</li>
+            <li>Invite your Friends</li>
+        </ul>
+    </section>
+</body>
+</html>

@@ -1,0 +1,111 @@
+body{
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid #000;
+    border-radius: 20px;
+    padding: 40px;
+    justify-content: center;
+    min-width: 700px;
+    box-sizing: border-box;
+}
+
+.form, .profile-completion{
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+}
+
+/*form-container*/
+.form{
+    width: 200px;
+}
+input{
+    margin-bottom: 20px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+label{
+    margin: 0;
+    margin-bottom: 10px;
+}
+.apply{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.apply:hover{
+    background-color: white;
+    color: black;
+    border: #000 2px solid;
+}
+.password-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%
+}
+.password-container input {
+    flex: 1;
+    width: 100%;
+}
+.toggle-btn {
+    position: absolute;
+    right: 10px;
+    bottom: 27px;
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-size: 16px;
+}
+
+/*profile-completion*/
+.profile-completion{
+    align-items: center;
+}
+.profile-completion-bar{
+    background-color: gray;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: conic-gradient(black 0deg 234deg, lightgray 234deg 360deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.progress{
+    background-color: black;
+}
+.profile-completion-bar::before {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.profile-completion-bar span {
+    position: relative;
+    z-index: 1;
+}
+
+.profile-completion-list{
+    height: 165px;
+    background-color: lightgray;
+    border-radius: 20px;
+    padding: 20px;
+    list-style: none;
+}
+.profile-completion-list li{
+    margin-bottom: 10px;
+}
+.s{
+    color:grey;
+    text-decoration: line-through;
+}
