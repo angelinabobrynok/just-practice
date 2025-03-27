@@ -1,0 +1,52 @@
+.imgs-grid{
+    display: grid;
+    grid-template-areas: 
+    "f t w"
+    "f r w"
+    "l r b";
+    gap: 10px;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.foggy-beach{
+    grid-area: f;
+}
+.living-room{
+    grid-area: l;
+}
+.table-topped{
+    grid-area: t; 
+}
+.red-door{
+    grid-area: r;
+}
+.white-apartment{
+    grid-area: w; 
+}
+.beach{
+    grid-area: b;
+}
+@media screen and (max-width:840px) {
+    .imgs-grid{
+        grid-template-areas: 
+        "f l"
+        "t r"
+        "w b"
+        ;
+    }
+}
+@media screen and (max-width:400px){
+    .imgs-grid{
+        grid-template-areas: 
+        "f"
+        "l"
+        "t"
+        "r"
+        "w"
+        "b"
+        ;
+    }
+}
