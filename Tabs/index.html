@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tabs</title>
+</head>
+<body>
+    <section class="tabs">
+         <section class = "tabs-section">
+            <span class = "selected" id = "first-tab" tabindex="0">First Tab</span>
+            <span id = "second-tab" tabindex="0">Second Tab</span>
+            <span id = "third-tab" tabindex="0">Third Tab</span>
+            <span id = "fourth-tab" tabindex="0">Fourth Tab</span>
+        </section>
+
+        <section class = "content">
+            <p>Clicking each tab should hide the content of the other tab and show the 
+                content of clicked tab. By default, enable the first tab</p>
+            <div class = "tab-content">
+                <p id = "text">First tab content to be displayed here</p>
+            </div>
+            <p>Add some dummy content or just add a simple text showing the tab</p>
+        </section>
+           
+    </section>
+
+<script src="script.js"></script>
+</body>
+</html>
