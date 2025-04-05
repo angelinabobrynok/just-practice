@@ -1,0 +1,32 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.textarea, .textarea-limit{
+    resize: none;
+    border: 2px solid black;
+    border-radius: 20px;
+    width: 500px;
+    height: 100px;
+    padding: 10px;
+    font-size: 15px;
+    outline: none;
+}
+.textarea-limit{
+    color: rgb(236, 44, 44);
+}
+.counter-limit{
+    color: rgb(236, 44, 44);
+}
+.counter{
+    position: relative;
+    bottom: 40px;
+    left: 476px;
+    font-size: 12px;
+    color: black
+}
