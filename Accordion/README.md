@@ -1,0 +1,3 @@
+# Preview
+
+![Accordion](preview.png)
